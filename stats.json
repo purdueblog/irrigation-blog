@@ -1,0 +1,80 @@
+{
+  "assetsByChunkName": {
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-17008046b81271dd46ff.js",
+      "component---src-pages-index-js-17008046b81271dd46ff.js.map"
+    ],
+    "component---src-pages-components-js": [
+      "component---src-pages-components-js-19be5360d032e53f4c09.js",
+      "component---src-pages-components-js-19be5360d032e53f4c09.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "path---components": [
+      "path---components-a0e39f21c11f6a62c5ab.js",
+      "path---components-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---node-modules-gatsby-plugin-offline-app-shell-js": [
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
+    ],
+    "component---src-templates-blog-post-js": [
+      "component---src-templates-blog-post-js-5380c259e4b58a4ecc7e.js",
+      "component---src-templates-blog-post-js-5380c259e4b58a4ecc7e.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-f9f83539fd15e4f28efc.js",
+      "component---src-layouts-index-js-f9f83539fd15e4f28efc.js.map"
+    ],
+    "path---portfolio-kirk": [
+      "path---portfolio-kirk-c75598677ce29400eb24.js",
+      "path---portfolio-kirk-c75598677ce29400eb24.js.map"
+    ],
+    "path---page-2": [
+      "path---page-2-a0e39f21c11f6a62c5ab.js",
+      "path---page-2-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---portfolio-tododoingdone": [
+      "path---portfolio-tododoingdone-cba5b0130d20769bf200.js",
+      "path---portfolio-tododoingdone-cba5b0130d20769bf200.js.map"
+    ],
+    "path---index": [
+      "path---index-fe00a9e2a53500bca241.js",
+      "path---index-fe00a9e2a53500bca241.js.map"
+    ],
+    "path---portfolio-tron-light-cycles": [
+      "path---portfolio-tron-light-cycles-5b1032bcd8e5cea9ffea.js",
+      "path---portfolio-tron-light-cycles-5b1032bcd8e5cea9ffea.js.map"
+    ],
+    "commons": [
+      "commons-20a036ec2ff94a18b567.js",
+      "commons-20a036ec2ff94a18b567.js.map"
+    ],
+    "path---portfolio-digicah": [
+      "path---portfolio-digicah-983b77826d77c4bc282f.js",
+      "path---portfolio-digicah-983b77826d77c4bc282f.js.map"
+    ],
+    "path---offline-plugin-app-shell-fallback": [
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-page-2-js": [
+      "component---src-pages-page-2-js-075954cd9c4544c7dcd8.js",
+      "component---src-pages-page-2-js-075954cd9c4544c7dcd8.js.map"
+    ],
+    "app": [
+      "app-85639c8f2be8207f3e29.js",
+      "app-85639c8f2be8207f3e29.js.map"
+    ],
+    "path---portfolio-wedding-website-and-dashboard": [
+      "path---portfolio-wedding-website-and-dashboard-ab667ff6f0c5a4d7cb3e.js",
+      "path---portfolio-wedding-website-and-dashboard-ab667ff6f0c5a4d7cb3e.js.map"
+    ],
+    "path---portfolio-h-2-g-2-pixel-adventure": [
+      "path---portfolio-h-2-g-2-pixel-adventure-5803602a2d0cb592b6c8.js",
+      "path---portfolio-h-2-g-2-pixel-adventure-5803602a2d0cb592b6c8.js.map"
+    ]
+  }
+}
