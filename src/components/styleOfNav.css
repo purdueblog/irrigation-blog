@@ -1,0 +1,43 @@
+.style4div {
+    background-color: black;
+      color:white;
+      float:left;
+      position:fixed;
+      z-index:3;
+      height:100%;
+      width:15%;
+
+}
+
+.style4ul{
+    padding-top:100px;
+    list-style:none;
+    display:block;
+    font-family:bold 20px sans-serif;
+}
+
+.style4li{
+    height:15%;
+
+
+}
+
+div {
+    animation-name: menubar;
+    animation-duration: 1s;
+  }
+
+@keyframes menubar1 {
+    0%   {left:0px;}
+    25%  {left:200px;}
+    50%  {left:200px;}
+    75%  {left:0px;}
+    100% {left:0px;}
+}
+@keyframes menubar2 {
+    0%   {left:0px;}
+    25%  {left:200px;}
+    50%  {left:200px;}
+    75%  {left:0px;}
+    100% {left:0px;}
+}

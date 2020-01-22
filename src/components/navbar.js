@@ -2,10 +2,13 @@ import React from 'react'
 import styled, { css } from 'styled-components'
 import { Flex, Box } from 'grid-styled'
 import scrollToElement from 'scroll-to-element'
-
+import stylef, { keyframes } from 'styled-components';
+import 'styleOfNav.css'
 import Name from './name'
 
 import { media } from '../utils/style'
+
+
 
 const Base = styled.div`
   padding: 0;
@@ -83,6 +86,8 @@ class NavBar extends React.Component {
       })
       .filter(n => n != undefined)
       .reverse()
+
+    
     const links = linkMap.map(function(link) {
       return (
         <li key={link.name}>
@@ -97,16 +102,34 @@ class NavBar extends React.Component {
       )
     })
     return (
-      <Base {...this.props}>
-        <Flex>
-          <Box px={2} width={[1, 1 / 3, 2 / 6]}>
-            <Name />
-          </Box>
-          <Box px={2} width={[0, 2 / 3, 4 / 6]}>
-            <ul>{links}</ul>
-          </Box>
-        </Flex>
-      </Base>
+      <div>
+        <Base {...this.props}>
+          <Flex>
+            <Box px={2} width={[1, 1 / 3, 2 / 6]}>
+              <Name />
+            </Box>
+            <Box px={2} width={[0, 2 / 3, 4 / 6]}>
+              <ul>{links}</ul>
+            </Box>
+          </Flex>
+        </Base>
+        <style>
+          @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+        </style>
+        <div class="style4div">
+            <ul class="style4ul">
+              <li>
+                  Members
+              </li>
+              <li>
+                  About Project
+              </li>
+              <li>
+                  Github Blog
+              </li>
+            </ul>
+        </div>
+      </div>
     )
   }
 }
