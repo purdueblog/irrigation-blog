@@ -203,20 +203,15 @@ export default props => {
           },
         ]}
       />
-      <a id="about-me">About Me</a>
+      <a id="about-me">Goal</a>
       <Section>
-        <Title>About Me</Title>
+        <Title>Goal</Title>
         <Flex alignItems="center" flexDirection="column">
           <Box px={2} width={[1, 1 / 2]}>
             <p>
-              Currently working as a software engineer at{' '}
-              <a href="https://shutterstock.com">Shutterstock</a> focusing on
-              the editorial content platform. As far as my work goes I've
-              probably worn every hat on the rack, most notable being Web
-              Developer, Software Engineer and Photographer. Don’t let my clean
-              lines and weakness for Swiss type fool you; My work has been
-              pretty diverse and enjoyable. For more information about me follow
-              one of my social media links above or at the bottom of the page.
+              Our project subejct is Smart Irrigation System of Agriculter IoT. <br></br>
+              Previous smart irrigation system usually checks farm and crops status and adjusts amount of water, using some sensors.
+              Our ultimate goal is to weather using weather api and data, and determine the amount of watering considering the rain.
             </p>
           </Box>
           <Box px={2} width={180}>
@@ -236,72 +231,64 @@ export default props => {
       <a id="experience">Experience</a>
       <Section center dark>
         <h4>Experience</h4>
-        <span>Where I've worked.</span>
-        <Item>
-          <span>MAY 2018 - CURRENT</span>
-          <h6>SHUTTERSTOCK</h6>
-          <p>Software Engineer</p>
-        </Item>
-        <Item>
-          <span>JUNE 2016 - APRIL 2018</span>
-          <h6>SAP IRELAND</h6>
-          <p>Full Stack Developer</p>
-        </Item>
-        <Item>
-          <span>FEB 2015 - AUG 2015</span>
-          <h6>SAP IRELAND</h6>
-          <p>Support Engineer</p>
-        </Item>
-        <Item>
-          <span>JAN 2014 - JULY 2014</span>
-          <h6>ST DECLAN'S COLLEGE</h6>
-          <p>Full Stack Developer</p>
-        </Item>
+        <Box px={2} width={[1, 1 / 2]}>
+          <p>
+            Currently working as a software engineer at{' '}
+            <a href="https://shutterstock.com">Shutterstock</a> focusing on
+            the editorial content platform. As far as my work goes I've
+            probably worn every hat on the rack, most notable being Web
+            Developer, Software Engineer and Photographer. Don’t let my clean
+            lines and weakness for Swiss type fool you; My work has been
+            pretty diverse and enjoyable. For more information about me follow
+            one of my social media links above or at the bottom of the page.
+          </p>
+        </Box>
       </Section>
       <a id="tech">Tech</a>
       <Section center>
         <h4>Tech</h4>
-        <span>Technologies I enjoy working with.</span>
-        <Showcase
-          images={
-            props.data.allImageSharp ? props.data.allImageSharp.edges : []
-          }
-        />
+        <Box px={2} width={[1, 1 / 2]}>
+          <p>
+            Currently working as a software engineer at{' '}
+            <a href="https://shutterstock.com">Shutterstock</a> focusing on
+            the editorial content platform. As far as my work goes I've
+            probably worn every hat on the rack, most notable being Web
+            Developer, Software Engineer and Photographer. Don’t let my clean
+            lines and weakness for Swiss type fool you; My work has been
+            pretty diverse and enjoyable. For more information about me follow
+            one of my social media links above or at the bottom of the page.
+          </p>
+        </Box>
       </Section>
       <a id="education">Education</a>
       <Section dark center>
         <h4>EDUCATION</h4>
-        <span>Education I've recieved.</span>
-        <Item>
-          <span>2012 - 2016</span>
-          <h6>BSC COMPUTER SCIENCE (1st Class Honours)</h6>
-          <p>Dublin Institute of Technology</p>
-        </Item>
-        <Item>
-          <span>2006 - 2012</span>
-          <h6>SECONDARY EDUCATION</h6>
-          <p>Saint Declan's College</p>
-        </Item>
+        <Box px={2} width={[1, 1 / 2]}>
+          <p>
+            Currently working as a software engineer at{' '}
+            <a href="https://shutterstock.com">Shutterstock</a> focusing on
+            the editorial content platform. As far as my work goes I've
+            probably worn every hat on the rack, most notable being Web
+            Developer, Software Engineer and Photographer. Don’t let my clean
+            lines and weakness for Swiss type fool you; My work has been
+            pretty diverse and enjoyable. For more information about me follow
+            one of my social media links above or at the bottom of the page.
+          </p>
+        </Box>
       </Section>
       <a id="honoursAndAwards">Honours & Awards</a>
       <Section center>
-        <h4>HONORS & AWARDS</h4>
-        <span>A list of honors and awards I have recieved for my work.</span>
-        <Item>
-          <span>2016</span>
-          <h6>BEST PROJECT (IN THE DIT PROJECT FAIR)</h6>
-          <p>SAP</p>
-        </Item>
-        <Item>
-          <span>2014</span>
-          <h6>GAMES STUDIO IRELAND CHALLENGE: BEST IN ORIGINAL STORY</h6>
-          <p>Games Fleadh</p>
-        </Item>
-        <Item>
-          <span>2010</span>
-          <h6>ACCESS ACCENTURE ACHIEVEMENT AWARD</h6>
-          <p>Accenture</p>
-        </Item>
+        <h4>Contribute</h4>
+        <Box px={2} width={[1, 1 / 2]}>
+          <p>
+            <h5>PURDUE University</h5>
+            <br></br>Connor Polanka<br></br>
+            <h3>CHUNGNAM NATIONAL University</h3>
+            <br></br>Myungwoo Yang
+            <br></br>Jeongjun Lee 
+            <br></br>Subeen Jeong
+          </p>
+        </Box>
       </Section>
     </Content>
   )
