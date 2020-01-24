@@ -281,12 +281,13 @@ export default props => {
         <h4>Contribute</h4>
         <Box px={2} width={[1, 1 / 2]}>
           <p>
-            <h5>PURDUE University</h5>
+            <h3>PURDUE University</h3>
             <br></br>Connor Polanka<br></br>
             <h3>CHUNGNAM NATIONAL University</h3>
-            <br></br>Myungwoo Yang
-            <br></br>Jeongjun Lee 
-            <br></br>Subeen Jeong
+            <br></br>
+              Myungwoo Yang
+              <br></br>Jeongjun Lee 
+              <br></br>Subeen Jeong
           </p>
         </Box>
       </Section>
