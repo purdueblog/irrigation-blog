@@ -2,7 +2,7 @@
 title: "1st Meeting"
 date: "2020-01-02"
 tags: ["irrigation", "react", "js", "javascript","arduino","lora","smart","farm","purdue","indiana"]
-image: './images/alltheirsongs.jpg'
+image: './images/meeting.png'
 ---
 
 ### 0. To make *a* Topic
