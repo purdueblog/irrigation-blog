@@ -1,43 +1,53 @@
 .style4div {
     background-color: black;
-      color:white;
-      float:left;
-      position:fixed;
-      z-index:3;
-      height:100%;
-      width:15%;
-
+    position: absolute;
+    left:-250px;
+    z-index:3;
+    height:100%;
+    width:250px;
+    top:0px;
+    text-align:left;
 }
 
-.style4ul{
+.style4ul {
     padding-top:100px;
     list-style:none;
     display:block;
-    font-family:bold 20px sans-serif;
+    margin-left:20px;
 }
 
-.style4li{
-    height:15%;
-
-
+.style4li {
+    padding-top:5px;
+    padding-bottom: 5px;
+    font:bold 20px sans-serif;
+    color:lightgray;
+    text-decoration: none;
+    list-style:none;
+    display:block;
+}
+.style4li :hover {
+    color:white;
+    font:bold 23px sans-serif;
+}
+.style4li details>summary>ul>li {
+    padding-top:0px;
+    font:bold 18px sans-serif;
 }
 
-div {
-    animation-name: menubar;
-    animation-duration: 1s;
-  }
+.style4li details>summary>ul>li :hover{
+    font:bold 20px sans-serif;
+}
+.style4li a{
+    text-decoration: none;
+    color:lightgray;
+}
 
-@keyframes menubar1 {
-    0%   {left:0px;}
-    25%  {left:200px;}
-    50%  {left:200px;}
-    75%  {left:0px;}
-    100% {left:0px;}
+.style4btn{
+    position: absolute;
+    top: 20px;
+    left:195px;
+    z-index:5;
+    width:35px;
+    height:35px;
 }
-@keyframes menubar2 {
-    0%   {left:0px;}
-    25%  {left:200px;}
-    50%  {left:200px;}
-    75%  {left:0px;}
-    100% {left:0px;}
-}
+
