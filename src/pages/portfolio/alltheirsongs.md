@@ -5,7 +5,7 @@ tags: ["irrigation", "react", "js", "javascript","arduino","lora","smart","farm"
 image: './images/meeting.png'
 ---
 
-### 0. To make *a* Topic
+### To make *a* Topic
 
 
 *[ attendance : Myungwoo Yang, Jeongjun Lee, Subeen Jeong ]*
