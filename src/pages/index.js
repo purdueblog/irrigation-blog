@@ -319,6 +319,7 @@ export const pageQuery = graphql`
               childImageSharp {
                 sizes(
                   maxWidth: 500
+                  maxHeight: 400
                   duotone: {
                     highlight: "#333333"
                     shadow: "#111111"
