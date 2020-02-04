@@ -195,7 +195,7 @@ export default props => {
           },
           {
             name: 'github-alt',
-            href: 'https://github.com/darrenbritton',
+            href: 'https://purdueblog.github.io/',
           },
           {
             name: 'linkedin',
