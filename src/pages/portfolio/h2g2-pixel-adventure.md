@@ -1,14 +1,30 @@
 ---
-title: "H2G2: Pixel Adventure"
-date: "2018-01-08"
-tags: ["unity", "award winning"]
-image: './images/h2g2.jpg'
+title: "Building Farm"
+date: "2020-01-30"
+tags: ["irrigation", "react", "js", "javascript","arduino","lora","smart","farm","purdue","indiana"]
+image: './images/bgr.jpg'
 ---
+### Building a smart farm
 
-This game was created with [Sam Boles](https://github.com/Xaeonn) to compete in the national Games Fleadh event. It is a text Adventure with pixel art, some minigamesm, and story created by myself which won the Game Studios Ireland: Best in Original Story award.
+We build completely our smart irrigation farm . We made skeleton for sprinkler using woods.
 
-[Play in Browser](/H2G2/WebBuild.html)
+We plant green onion seeds and growing green onions  separately.
 
-![](./images/h2g2A.PNG "h2g2 start screen")
-![](./images/h2g2B.PNG "h2g2 first text")
-![](./images/h2g2c.png "h2g2 launch poster")
+And We also divided the comparators and the experimenters into the same environment.
+
+
+![](./images/bgr.jpg "Building farm")
+
+We use arduino and some sensors. There are temperature, air humidity, soil moisutre sensors.
+
+![](./images/sensor.jpg "sensor")
+
+The above image is circuit for sensor. 
+
+![](./images/separate.jpg "separate")
+
+This image is separated soil to compare auto irrigation and manual irrigation.
+
+The Sprinkler on farm operates well in this Video.
+
+<iframe width="901" height="507" src="https://www.youtube.com/embed/ziH4H-jZAgs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
