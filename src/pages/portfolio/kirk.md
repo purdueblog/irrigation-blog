@@ -1,11 +1,15 @@
 ---
-title: "KIRK"
+title: "Lights"
 date: "2018-01-08"
-tags: ["C#", "bot"]
-image: './images/dani.jpg'
+tags: ["irrigation", "react", "js", "javascript","arduino","lora","smart","farm","purdue","indiana"]
+image: './images/sunlight.jpg'
 ---
 
-KIRK was created as a star trek based chatbot developed for command line access with C#.
-The resulting chatbot can be trained through conversation or via parsing of text files with full text-to-speech output.
+### Add lights
 
-[View On Github](https://github.com/darrenbritton/KIRK)
+![](./images/sunlight.jpg "lights")
+
+We used some lights into the farm for growing plants in the building.
+
+They help green onions photosynthesize themselves.
+
