@@ -228,51 +228,41 @@ export default props => {
       <Title small>Portfolio</Title>
       <a id="portfolio">Portfolio</a>
       <Portfolio items={props.data.allMarkdownRemark.edges} />
-      <a id="experience">Experience</a>
+      <a id="experience">problem</a>
       <Section center dark>
-        <h4>Experience</h4>
+        <h4>Current Problem</h4>
         <Box px={2} width={[1, 1 / 2]}>
           <p>
-            Currently working as a software engineer at{' '}
-            <a href="https://shutterstock.com">Shutterstock</a> focusing on
-            the editorial content platform. As far as my work goes I've
-            probably worn every hat on the rack, most notable being Web
-            Developer, Software Engineer and Photographer. Don’t let my clean
-            lines and weakness for Swiss type fool you; My work has been
-            pretty diverse and enjoyable. For more information about me follow
-            one of my social media links above or at the bottom of the page.
+              Drought<br></br>
+               In western U.S., there is severe drought. It can kill plants, and make them use more water.
+              <br></br><br></br>
+              Water usage rate<br></br>
+               Most automatic irrigation system use more water than is necessary.
+              Because they can't predict weather.
+              If tomorrow will be rainy day, we don't have to water the plants.
+
           </p>
         </Box>
       </Section>
-      <a id="tech">Tech</a>
+      <a id="tech">Algorithm</a>
       <Section center>
-        <h4>Tech</h4>
+        <h4>Algorithm for water saving</h4>
         <Box px={2} width={[1, 1 / 2]}>
           <p>
-            Currently working as a software engineer at{' '}
-            <a href="https://shutterstock.com">Shutterstock</a> focusing on
-            the editorial content platform. As far as my work goes I've
-            probably worn every hat on the rack, most notable being Web
-            Developer, Software Engineer and Photographer. Don’t let my clean
-            lines and weakness for Swiss type fool you; My work has been
-            pretty diverse and enjoyable. For more information about me follow
-            one of my social media links above or at the bottom of the page.
+            M.A.D algorithm is Management Allowable Depletion.
+            Using this, we can specify how dry soil can be without stress.
+            M.A.D depends on A.W.C (Avaliable Water Capacity) and has a specific value for each crop status like seeds or flowering.
+            <br></br><a href="">Details on M.A.D</a>
           </p>
         </Box>
       </Section>
-      <a id="education">Education</a>
+      <a id="education">Network</a>
       <Section dark center>
-        <h4>EDUCATION</h4>
+        <h4>Network for low power</h4>
         <Box px={2} width={[1, 1 / 2]}>
           <p>
-            Currently working as a software engineer at{' '}
-            <a href="https://shutterstock.com">Shutterstock</a> focusing on
-            the editorial content platform. As far as my work goes I've
-            probably worn every hat on the rack, most notable being Web
-            Developer, Software Engineer and Photographer. Don’t let my clean
-            lines and weakness for Swiss type fool you; My work has been
-            pretty diverse and enjoyable. For more information about me follow
-            one of my social media links above or at the bottom of the page.
+            LoRa is Long Range and low-power, wide-area network(LPWAN) technology.
+            It is slow than 4G or 5G network, but it can communicate more longer than them using lower power.
           </p>
         </Box>
       </Section>
@@ -284,8 +274,7 @@ export default props => {
             <h3>PURDUE University</h3>
             <br></br>Connor Polanka<br></br>
             <h3>CHUNGNAM NATIONAL University</h3>
-            <br></br>
-              Myungwoo Yang
+              <br></br>Myungwoo Yang
               <br></br>Jeongjun Lee 
               <br></br>Subeen Jeong
           </p>
