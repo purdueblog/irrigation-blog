@@ -209,7 +209,7 @@ export default props => {
         <Flex alignItems="center" flexDirection="column">
           <Box px={2} width={[1, 1 / 2]}>
             <p>
-              Our project subejct is Smart Irrigation System of Agriculter IoT. <br></br>
+              Our project subejct is Smart Irrigation System of Agriculture IoT. <br></br>
               Previous smart irrigation system usually checks farm and crops status and adjusts amount of water, using some sensors.
               Our ultimate goal is to weather using weather api and data, and determine the amount of watering considering the rain.
             </p>
@@ -246,7 +246,7 @@ export default props => {
       </Section>
       <a id="tech">Algorithm</a>
       <Section center>
-        <h4>Algorithm for water saving</h4>
+        <h4>Algorithm</h4><h3>M.A.D for water saving</h3>
         <Box px={2} width={[1, 1 / 2]}>
           <p>
             M.A.D algorithm is Management Allowable Depletion.
