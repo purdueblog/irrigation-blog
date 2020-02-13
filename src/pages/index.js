@@ -282,6 +282,8 @@ export default props => {
       </Section>
     </Content>
   )
+  console.log("location : ",props.location)
+  console.log("content : ", content.props.children)
   return (
     <Layout location={props.location}>
       <NavBar main children={content.props.children} />

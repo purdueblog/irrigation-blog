@@ -5,7 +5,7 @@ import scrollToElement from 'scroll-to-element'
 import './styleOfNav.css'
 import Name from './name'
 import logoCorn from './img/corn.png'
-
+import { Link } from "gatsby"
 import { media } from '../utils/style'
 
 
@@ -160,7 +160,16 @@ class NavBar extends React.Component {
             </Box>
             <img src={logoCorn}class="style4btn" onClick={this.handleOnClick}/>
             <Box px={2} width={[0, 2 / 3, 4 / 6]}>
-              <ul>{links}</ul>
+              <ul>
+                <li>
+                  <a>
+                    <Link to="/manual">
+                      manual
+                    </Link>
+                  </a>
+                </li>
+                {links}
+              </ul>
             </Box>
           </Flex>
         </Base>
