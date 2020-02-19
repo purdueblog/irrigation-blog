@@ -2,8 +2,22 @@ import React, {useState} from 'react'
 import {InputGroup, FormControl, Button, Card} from 'react-bootstrap'
 
 const GetRequiredWater = () => {
+    const [water, setWater] = useState(0);
     const [mmWater, setMmWater] = useState(0);
     const [inchWater, setInchWater] = useState(0);
+
+    const setWaterValue = (event) => {
+        console.log(event.target.value);
+        setWater(parseInt(event.target.value));
+    }
+
+    const calculateWaterAmount = () => {
+        const newMmWater = -0.000025250 * Math.pow(water, 3) + 0.003195485 * Math.pow(water, 2) + 0.000200062 * water + 1.143255449;
+        const newInchWater = -0.00000073854 * Math.pow(water, 3) + 0.00007835096 * Math.pow(water, 2) + 0.00223991013 * water + 0.03404229081;
+        setMmWater(Math.round(newMmWater * 100) / 100);
+        setInchWater(Math.round(newInchWater * 100) / 100);
+    }
+
     return(
         <div className="container">
             <label htmlFor="basic-url" className="mt-3">Water requirements according to growth</label>
@@ -18,13 +32,18 @@ const GetRequiredWater = () => {
                         <FormControl 
                             id="basic-url" 
                             aria-describedby="basic-addon3" 
-                            on
+                            onChange = {setWaterValue}
                         />
                         <InputGroup.Append>
                             <InputGroup.Text>day</InputGroup.Text>
                         </InputGroup.Append>
                         <InputGroup.Append>
-                            <Button variant="outline-secondary">Calculate</Button>
+                            <Button 
+                                variant="outline-secondary"
+                                onClick={calculateWaterAmount}
+                            >
+                                Calculate
+                            </Button>
                         </InputGroup.Append>
                     </InputGroup>
                 </div>
