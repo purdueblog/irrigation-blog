@@ -209,9 +209,9 @@ export default props => {
         <Flex alignItems="center" flexDirection="column">
           <Box px={2} width={[1, 1 / 2]}>
             <p>
-              Our project subejct is Smart Irrigation System of Agriculture IoT. <br></br>
-              Previous smart irrigation system usually checks farm and crops status and adjusts amount of water, using some sensors.
-              Our ultimate goal is to weather using weather api and data, and determine the amount of watering considering the rain.
+             Our project subject is Smart Irrigation System of Agriculture IoT.
+    The previous smart irrigation system usually checks farm and crop status and adjusts amount of water, using some sensors.
+    Our ultimate goal is to use weather API and data to determine the amount of water necessary, considering precipitation.
             </p>
           </Box>
           <Box px={2} width={180}>
@@ -234,7 +234,7 @@ export default props => {
         <Box px={2} width={[1, 1 / 2]}>
           <p>
               Drought<br></br>
-               In western U.S., there is severe drought. It can kill plants, and make them use more water.
+               In the western U.S., there is severe drought. It can kill plants and make farmers use more water.
               <br></br><br></br>
               Water usage rate<br></br>
                Most automatic irrigation system use more water than is necessary.
