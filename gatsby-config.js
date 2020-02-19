@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Darren Britton`
+    title: `Spray`
   },
   plugins: [
     {
@@ -67,12 +67,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "Darren Britton Portfolio",
-        short_name: "Darren Britton",
+        name: "Irrigation system blog",
+        short_name: "Spray",
         start_url: "/",
         background_color: "#292929",
         theme_color: "#405375",
-        display: "minimal-ui"
+        display: "minimal-ui",
       }
     },
     {

@@ -36,13 +36,15 @@ const PageBase = ({ location, children }) => {
     <Body>
       <GlobalStyle />
       <Helmet
-        title="Darren Britton"
+        title="Spray"
         meta={[
-          { name: 'description', content: 'portfolio' },
-          { name: 'keywords', content: 'darren, britton, portfolio' },
+          { name: 'description', content: 'Irrigation' },
+          { name: 'keywords', content: 'Purdue, Irrigation, Lora' },
           { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         ]}
-      />
+      >
+          <link rel="icon" type="image/png" href="favicon.png" sizes="16x16"/>
+      </Helmet>
       <Content>{children}</Content>
       {location && location.pathname != '/404' && <Footer />}
     </Body>
