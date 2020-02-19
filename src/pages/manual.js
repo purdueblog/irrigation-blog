@@ -1,27 +1,52 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
-import Layout from '../components/layout'
+import PageBase from '../components/layout'
 import Button from '../components/button'
-
+import {InputGroup, FormControl} from 'react-bootstrap';
 import NavBar from '../components/navbar'
 
-class Manual extends React.Component {
-  render() {
-    const content = (
-      <div>
-        <h1 id="buttons"></h1>
-        <Button>Default</Button>
-       
+import 'bootstrap/dist/css/bootstrap.min.css';
+import setTime from '../components/Manual/setTime';
+import IrrigationLine from '../components/Manual/irrigationLine';
+import TotalIrrigation from '../components/Manual/totalIrrigation';
+import GetRequiredWater from '../components/Manual/getRequiredWater';
+
+const Manual = () => {
+  const [todayWater, setTodayWater] = useState(0);
+  const [monthWater, setMonthWater] = useState(0);
+
+  const content = (
+    <div>
+      <h1 id="buttons"></h1>
+      <Button>Default</Button>
+    </div>
+  )
+
+  return (
+    <PageBase>
+      <NavBar dark children={content.props.children} />
+      <div className="container">
+        <div class="row justify-content-md-center shadow">
+          <div className="col-9">
+            <IrrigationLine
+              setTodayWater = {setTodayWater}
+              setMonthWater = {setMonthWater}
+            />
+          </div>
+          <div className="col">
+            <TotalIrrigation
+              todayWater = {todayWater}
+              monthWater = {monthWater}
+            />
+          </div>
+        </div>
+        <div className="row mt-5 shadow">
+          <GetRequiredWater/>
+        </div>
        
       </div>
-    )
-    return (
-      <Layout>
-        <NavBar dark children={content.props.children} />
-        
-      </Layout>
-    )
-  }
+    </PageBase>
+  )
 }
 
 export default Manual

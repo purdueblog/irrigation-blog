@@ -49,7 +49,7 @@ class Name extends React.Component {
   render() {
     return (
       <Base {...this.props} href="/">
-        Darren Britton
+        Smart spray
       </Base>
     )
   }
