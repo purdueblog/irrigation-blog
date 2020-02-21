@@ -40,6 +40,9 @@ const Manual = () => {
             />
           </div>
         </div>
+        {/* <div className="row shadow">
+          <img src="images/growth.png"/> 
+        </div> */}
         <div className="row mt-5 shadow">
           <GetRequiredWater/>
         </div>

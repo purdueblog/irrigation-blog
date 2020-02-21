@@ -51,8 +51,13 @@ const IrrigationLine = ({setTodayWater, setMonthWater}) => {
         const todayWater = parseInt(response.data.waters[todayIndex]);
         setTodayWater(todayWater)
 
+        // set total water month
+        const monthWater = response.data.monthWater
+        setMonthWater(parseInt(monthWater/1000))
+
         // set total water week
         setWaterData(response.data.waters)
+
       })
       .catch((error) => {
         // handle error
