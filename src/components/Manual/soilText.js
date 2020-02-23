@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import {Card} from 'react-bootstrap';
 
-const SoilText = () => {
+const SoilText = ({soilMoisture, mad}) => {
+
     return (
         <div>
             <div className="container">
@@ -10,7 +11,7 @@ const SoilText = () => {
                     <Card.Body>
                         <Card.Title>Currnet Soil Moisture</Card.Title>
                         <Card.Text>
-                            <b>20 %</b> 
+                            <b>{soilMoisture} %</b> 
                         </Card.Text>
                     </Card.Body>
                 </Card>
@@ -20,10 +21,10 @@ const SoilText = () => {
                     <Card.Body>
                         <Card.Title>Current MAD</Card.Title>
                         <Card.Text>
-                            <b>30 %</b> 
+                            <b>{mad} %</b> 
                         </Card.Text>
                     </Card.Body>
-                </Card>
+                </Card>d
             </div>
         </div>
         </div>

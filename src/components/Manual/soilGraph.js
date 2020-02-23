@@ -1,8 +1,9 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import {HorizontalBar} from 'react-chartjs-2';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import SoilText from './soilText';
+import soilMoistureAxios from '../apis/soilMoistureAxios'
 
 const soilGraph = () => {
     // array of amout about irrigation
@@ -10,6 +11,32 @@ const soilGraph = () => {
     const [labels, setLabels] = useState(['Soil Moisture', 'Mad']);
     const [mad, setMad] = useState(0);
     const [soilMoisture, setSoilMoisture] = useState(0);
+
+    const fetchSoilMoisture = async () => {
+        await soilMoistureAxios.get()
+        .then((response) => {
+            const getSoilMoisture = response.data.feeds[0].field3;
+            setSoilMoisture(getSoilMoisture)
+        })
+    }
+
+    const getMadBySoilMoisture = () => {
+        if(soilMoisture > 16){
+            const result = ((34-16) - soilMoisture) / 34 * 100;
+            const roundedResult  = parseInt(result*100)/100
+            return roundedResult;
+        }
+        return 100;
+    }
+
+    useEffect(() => {
+        setMad(getMadBySoilMoisture());
+    }, [soilMoisture])
+
+
+    useEffect(() => {
+        fetchSoilMoisture();
+    }, [])
 
     const state = {
         labels: labels,
