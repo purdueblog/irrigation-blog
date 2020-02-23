@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {InputGroup, FormControl, Button, Card} from 'react-bootstrap'
+import {InputGroup, FormControl, Button, Card, Image, Container, Row, Col} from 'react-bootstrap'
 
 const GetRequiredWater = () => {
     const [water, setWater] = useState(0);
@@ -19,7 +19,12 @@ const GetRequiredWater = () => {
     }
 
     return(
-        <div className="container">
+        <Container>
+            <Row>
+                <Col xs={12} md={12}>
+                    <Image src="images/growth.png" fluid className="w-100" />
+                </Col>
+            </Row>
             <label htmlFor="basic-url" className="mt-3">Water requirements according to growth</label>
             <div className="row">
                 <div className="col-6">
@@ -66,7 +71,7 @@ const GetRequiredWater = () => {
             </div>
             <div className="row justify-content-md-center">
             </div>
-        </div>
+        </Container>
     )
 }
 

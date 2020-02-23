@@ -6,10 +6,10 @@ import {InputGroup, FormControl} from 'react-bootstrap';
 import NavBar from '../components/navbar'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import setTime from '../components/Manual/setTime';
 import IrrigationLine from '../components/Manual/irrigationLine';
 import TotalIrrigation from '../components/Manual/totalIrrigation';
 import GetRequiredWater from '../components/Manual/getRequiredWater';
+import SoilMoisture from '../components/Manual/soilMoisture';
 
 const Manual = () => {
   const [todayWater, setTodayWater] = useState(0);
@@ -40,11 +40,13 @@ const Manual = () => {
             />
           </div>
         </div>
-        {/* <div className="row shadow">
-          <img src="images/growth.png"/> 
-        </div> */}
-        <div className="row mt-5 shadow">
-          <GetRequiredWater/>
+       
+        <div className="row shadow mt-5">
+          <SoilMoisture/>
+        </div>
+
+        <div className="row mt-5 shadow ">
+            <GetRequiredWater/>
         </div>
        
       </div>

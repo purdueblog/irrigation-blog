@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {Line} from 'react-chartjs-2';
+import {Bar} from 'react-chartjs-2';
 import dates from '../apis/dates';
 import irrigations from '../apis/irrigations';
 
@@ -38,8 +38,8 @@ const IrrigationLine = ({setTodayWater, setMonthWater}) => {
       console.log(...labels)
       await irrigations.get('', {
         params : {
-          ...labels,
-          year : todayDate.year 
+          ...labels, 
+          year : todayDate.year
         }
       }).then((response) => {
         // handle success
@@ -53,7 +53,7 @@ const IrrigationLine = ({setTodayWater, setMonthWater}) => {
 
         // set total water month
         const monthWater = response.data.monthWater
-        setMonthWater(parseInt(monthWater/1000))
+        setMonthWater(parseInt(monthWater)/1000)
 
         // set total water week
         setWaterData(response.data.waters)
@@ -113,7 +113,7 @@ const IrrigationLine = ({setTodayWater, setMonthWater}) => {
 
     return (
       <div>
-        <Line
+        <Bar
           data={state}
           options={{
             title:{
