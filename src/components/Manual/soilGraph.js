@@ -2,11 +2,14 @@ import React, {useState} from 'react'
 import {HorizontalBar} from 'react-chartjs-2';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
+import SoilText from './soilText';
 
-const SoilMoisture = () => {
+const soilGraph = () => {
     // array of amout about irrigation
     const [soilDatas, setWaterData] = useState([10,20]);
-    const [labels, setLabels] = useState(['', '']);
+    const [labels, setLabels] = useState(['Soil Moisture', 'Mad']);
+    const [mad, setMad] = useState(0);
+    const [soilMoisture, setSoilMoisture] = useState(0);
 
     const state = {
         labels: labels,
@@ -52,10 +55,16 @@ const SoilMoisture = () => {
                             }}
                         />
                 </Col>
+                <Col lg={4} md={12}>
+                    <SoilText
+                        mad={mad}
+                        soilMoisture={soilMoisture}
+                    />
+                </Col>
             </Row>
         </Container>
             
     )
 }
 
-export default SoilMoisture;
+export default soilGraph;

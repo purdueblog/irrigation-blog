@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import IrrigationLine from '../components/Manual/irrigationLine';
 import TotalIrrigation from '../components/Manual/totalIrrigation';
 import GetRequiredWater from '../components/Manual/getRequiredWater';
-import SoilMoisture from '../components/Manual/soilMoisture';
+import SoilGraph from '../components/Manual/soilGraph';
 
 const Manual = () => {
   const [todayWater, setTodayWater] = useState(0);
@@ -42,7 +42,7 @@ const Manual = () => {
         </div>
        
         <div className="row shadow mt-5">
-          <SoilMoisture/>
+          <SoilGraph/>
         </div>
 
         <div className="row mt-5 shadow ">
