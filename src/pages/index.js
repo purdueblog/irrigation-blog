@@ -190,16 +190,8 @@ export default props => {
         }}
         icons={[
           {
-            name: 'twitter',
-            href: 'https://twitter.com/darren_britton',
-          },
-          {
             name: 'github-alt',
-            href: 'https://purdueblog.github.io/',
-          },
-          {
-            name: 'linkedin',
-            href: 'https://ie.linkedin.com/in/darrenbritton',
+            href: 'https://github.com/orgs/purdueblog/dashboard/',
           },
         ]}
       />

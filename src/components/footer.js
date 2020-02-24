@@ -51,24 +51,6 @@ class Footer extends React.Component {
               <Box>
                 <Name block />
               </Box>
-              <Box>
-                <SocialIconsStyled
-                  icons={[
-                    {
-                      name: 'twitter',
-                      href: 'https://twitter.com/darren_britton',
-                    },
-                    {
-                      name: 'github-alt',
-                      href: 'https://github.com/darrenbritton',
-                    },
-                    {
-                      name: 'linkedin',
-                      href: 'https://ie.linkedin.com/in/darrenbritton',
-                    },
-                  ]}
-                />
-              </Box>
             </Flex>
           </Box>
           <Box width={[1, 1 / 2, 1 / 3, 1 / 6]}>
