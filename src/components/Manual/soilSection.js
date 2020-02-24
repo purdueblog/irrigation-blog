@@ -5,6 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import SoilText from './soilText';
 import soilMoistureAxios from '../apis/soilMoistureAxios'
 import SetWaterTime from './setWaterTime';
+import RainfallText from './rainfallText';
 
 const soilGraph = () => {
     // array of amout about irrigation
@@ -22,8 +23,10 @@ const soilGraph = () => {
     }
 
     const getMadBySoilMoisture = () => {
-        if(soilMoisture > 16){
-            const result = ((34-16) - soilMoisture) / 34 * 100;
+        if(soilMoisture > 34){
+            return 0;
+        }else if(soilMoisture > 16){
+            const result = ((34) - soilMoisture) / 34 * 100;
             const roundedResult  = parseInt(result*100)/100
             return roundedResult;
         }
@@ -34,6 +37,9 @@ const soilGraph = () => {
         setMad(getMadBySoilMoisture());
     }, [soilMoisture])
 
+    useEffect(() => {
+        setWaterData([soilMoisture, mad])
+    }, [mad])
 
     useEffect(() => {
         fetchSoilMoisture();
@@ -88,6 +94,11 @@ const soilGraph = () => {
                         mad={mad}
                         soilMoisture={soilMoisture}
                     />
+                </Col>
+            </Row>
+            <Row>
+                <Col lg={12} md={12}>
+                    <RainfallText/>
                 </Col>
             </Row>
             <Row>

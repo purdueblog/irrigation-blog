@@ -6,7 +6,7 @@ const totalIrrigation = ({todayWater, monthWater}) => {
     return(
         <div className="container">
             <div class="row"> 
-                <Card className="text-center mt-5 shadow">
+                <Card className="text-center mt-5 shadow w-100">
                     <Card.Body>
                         <Card.Title>Today</Card.Title>
                         <Card.Text>
@@ -16,7 +16,7 @@ const totalIrrigation = ({todayWater, monthWater}) => {
                 </Card>
             </div>
             <div class="row">
-                <Card className="text-center mt-5 shadow">
+                <Card className="text-center mt-5 shadow w-100">
                     <Card.Body>
                         <Card.Title>Month</Card.Title>
                         <Card.Text>

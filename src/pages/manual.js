@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react'
 
 import PageBase from '../components/layout'
 import Button from '../components/button'
-import {InputGroup, FormControl} from 'react-bootstrap';
+import {InputGroup, FormControl, Container, Row, Col} from 'react-bootstrap';
 import NavBar from '../components/navbar'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import IrrigationLine from '../components/Manual/irrigationLine';
 import TotalIrrigation from '../components/Manual/totalIrrigation';
 import GetRequiredWater from '../components/Manual/getRequiredWater';
-import SoilGraph from '../components/Manual/soilGraph';
+import SoilSection from '../components/Manual/soilSection';
 
 const Manual = () => {
   const [todayWater, setTodayWater] = useState(0);
@@ -25,31 +25,31 @@ const Manual = () => {
   return (
     <PageBase>
       <NavBar dark children={content.props.children} />
-      <div className="container">
-        <div class="row justify-content-md-center shadow">
-          <div className="col-9">
+      <Container>
+        <Row className="justify-content-md-center shadow">
+          <Col lg={8} md={12}>
             <IrrigationLine
               setTodayWater = {setTodayWater}
               setMonthWater = {setMonthWater}
             />
-          </div>
-          <div className="col">
+          </Col>
+          <Col lg={4} md={12}>
             <TotalIrrigation
               todayWater = {todayWater}
               monthWater = {monthWater}
             />
-          </div>
-        </div>
+          </Col>
+        </Row>
        
         <div className="row shadow mt-5">
-          <SoilGraph/>
+          <SoilSection/>
         </div>
 
         <div className="row mt-5 shadow ">
             <GetRequiredWater/>
         </div>
        
-      </div>
+      </Container>
     </PageBase>
   )
 }

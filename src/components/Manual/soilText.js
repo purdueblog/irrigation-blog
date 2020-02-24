@@ -24,7 +24,7 @@ const SoilText = ({soilMoisture, mad}) => {
                             <b>{mad} %</b> 
                         </Card.Text>
                     </Card.Body>
-                </Card>d
+                </Card>
             </div>
         </div>
         </div>
