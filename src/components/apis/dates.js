@@ -1,5 +1,5 @@
 import axios from 'axios';
 
 export default axios.create({
-    baseURL: 'http://worldtimeapi.org/api/timezone/America/Indiana/Indianapolis'
+    baseURL: 'https://worldtimeapi.org/api/timezone/America/Indiana/Indianapolis'
 })
