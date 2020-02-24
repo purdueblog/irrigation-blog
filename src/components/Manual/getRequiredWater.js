@@ -26,8 +26,8 @@ const GetRequiredWater = () => {
                 </Col>
             </Row>
             <label htmlFor="basic-url" className="mt-3">Water requirements according to growth</label>
-            <div className="row">
-                <div className="col-6">
+            <Row>
+                <Col lg={6} md={12}>
                     <InputGroup className="mb-3">
                         <InputGroup.Prepend>
                             <InputGroup.Text id="basic-addon3">
@@ -51,8 +51,8 @@ const GetRequiredWater = () => {
                             </Button>
                         </InputGroup.Append>
                     </InputGroup>
-                </div>
-                <div className="col">
+                </Col>
+                <Col lg={6} md={12}>
                     <Card className="mb-3">
                         <Card.Header>Result</Card.Header>
                         <Card.Body>
@@ -67,10 +67,8 @@ const GetRequiredWater = () => {
                             </Card.Text>
                         </Card.Body>
                     </Card>
-                </div>
-            </div>
-            <div className="row justify-content-md-center">
-            </div>
+                </Col>
+            </Row>
         </Container>
     )
 }
