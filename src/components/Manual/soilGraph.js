@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import SoilText from './soilText';
 import soilMoistureAxios from '../apis/soilMoistureAxios'
+import SetWaterTime from './setWaterTime';
 
 const soilGraph = () => {
     // array of amout about irrigation
@@ -87,6 +88,11 @@ const soilGraph = () => {
                         mad={mad}
                         soilMoisture={soilMoisture}
                     />
+                </Col>
+            </Row>
+            <Row>
+                <Col lg={12} md={12}>
+                    <SetWaterTime/>
                 </Col>
             </Row>
         </Container>
