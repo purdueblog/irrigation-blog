@@ -2,14 +2,17 @@ import React, {useState, useEffect} from 'react';
 import weatherAxios from '../apis/weatherAxios';
 
 
-const RainfallText = () => {
+const RainfallText = ({suppliedWater, setSuppliedWater}) => {
     const [rainfall, setRainfall] = useState(0);
 
     const fetchRainfall = async() => {
         await weatherAxios.get()
             .then((response) => {
                 const newRainfall = response.data.rainfall;
-                setRainfall(newRainfall);
+                // imch to mm
+                setRainfall(newRainfall * 25.4);
+                const newSuppliedWater = 812 * 2.54 * newRainfall; 
+                setSuppliedWater(parseInt(newSuppliedWater*100)/100);
                 console.log('rainfall fetch success!!', newRainfall);
             })
             .catch((error)=>{
@@ -24,7 +27,12 @@ const RainfallText = () => {
 
     return(
         <div>
-            Today rainfall is <b>{rainfall} in</b>
+            <div>
+                <h5>Today rainfall : <b>{rainfall} mm</b></h5>
+            </div>
+            <div>
+                <h5>Water supplied to the farm by rain : <b>{suppliedWater} mm</b></h5>
+            </div>
         </div>
     )
 }

@@ -26,7 +26,7 @@ const SetWaterTime = () => {
 
 
     return(
-        <div>
+        <div className="w-100">
             <label htmlFor="basic-url" className="mt-3">How much do you want to set time?</label>
                 <InputGroup className="mb-3">
                     <InputGroup.Prepend>

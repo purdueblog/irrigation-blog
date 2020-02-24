@@ -6,6 +6,7 @@ import SoilText from './soilText';
 import soilMoistureAxios from '../apis/soilMoistureAxios'
 import SetWaterTime from './setWaterTime';
 import RainfallText from './rainfallText';
+import CalculatedResult from './calcuatedResult';
 
 const soilGraph = () => {
     // array of amout about irrigation
@@ -13,6 +14,8 @@ const soilGraph = () => {
     const [labels, setLabels] = useState(['Soil Moisture', 'Mad']);
     const [mad, setMad] = useState(0);
     const [soilMoisture, setSoilMoisture] = useState(0);
+    const [suppliedWater, setSuppliedWater] = useState(0);
+
 
     const fetchSoilMoisture = async () => {
         await soilMoistureAxios.get()
@@ -97,12 +100,26 @@ const soilGraph = () => {
                 </Col>
             </Row>
             <Row>
-                <Col lg={12} md={12}>
-                    <RainfallText/>
+                <Col className="mt-3">
+                    <RainfallText
+                        suppliedWater={suppliedWater}
+                        setSuppliedWater={setSuppliedWater}
+                    />
                 </Col>
             </Row>
             <Row>
-                <Col lg={12} md={12}>
+                <Col className="mt-3">
+                    <CalculatedResult
+                        soilMoisture={soilMoisture}
+                        mad={mad}
+                        suppliedWater={suppliedWater}
+                    />
+                </Col>
+            </Row>
+            <Row>
+                <Col lg={4} md={0}>
+                </Col>
+                <Col lg={8} md={12} className="d-flex justify-content-end">
                     <SetWaterTime/>
                 </Col>
             </Row>
