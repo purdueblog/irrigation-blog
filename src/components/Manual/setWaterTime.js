@@ -17,11 +17,11 @@ const SetWaterTime = () => {
         console.log(time);
         await setTimeAxios.post('', {time})
             .then((response) => {
-                    alert(response.data.message)
+                    alert(response.data.message);
             })
-            .catch(()=>[
-                console.log("error set time")
-            ])
+            .catch(()=>{
+                console.log("error set time");
+            })
     }
 
 
