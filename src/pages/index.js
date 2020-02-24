@@ -201,9 +201,9 @@ export default props => {
         <Flex alignItems="center" flexDirection="column">
           <Box px={2} width={[1, 1 / 2]}>
             <p>
-             Our project subject is Smart Irrigation System of Agriculture IoT.
-    The previous smart irrigation system usually checks farm and crop status and adjusts amount of water, using some sensors.
-    Our ultimate goal is to use weather API and data to determine the amount of water necessary, considering precipitation.
+              Our project subject is Smart Irrigation System of Agriculture IoT.
+              The previous smart irrigation system usually checks farm and crop status and adjusts amount of water, using some sensors.
+              Our ultimate goal is to use weather API and data to determine the amount of water necessary, considering precipitation.
             </p>
           </Box>
           <Box px={2} width={180}>
