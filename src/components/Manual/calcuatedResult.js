@@ -54,7 +54,7 @@ const CalculatedResult = ({soilMoisture, mad, suppliedWater}) => {
                 <h5>Requirement irrigation time : <b>{roundValue(requiredTime)} sec</b></h5> 
             </div>
             <div>
-                <h5>Requirement amount of water : <b>{getAmountUsingTime()} mm</b></h5> 
+                <h5>Requirement amount of water : <b>{getAmountUsingTime()} ml</b></h5> 
             </div>
             <div className="mt-3">
                 {getRequiredState()}
