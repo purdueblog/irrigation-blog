@@ -201,7 +201,7 @@ export default props => {
         <Flex alignItems="center" flexDirection="column">
           <Box px={2} width={[1, 1 / 2]}>
             <p>
-              Our project subject is Smart Irrigation System of Agriculture IoT.
+              Our project is the Smart Irrigation System of Agriculture IoT.
               The previous smart irrigation system usually checks farm and crop status and adjusts amount of water, using some sensors.
               Our ultimate goal is to use weather API and data to determine the amount of water necessary, considering precipitation.
             </p>
@@ -230,8 +230,8 @@ export default props => {
               <br></br><br></br>
               Water usage rate<br></br>
                Most automatic irrigation system use more water than is necessary.
-              Because they can't predict weather.
-              If tomorrow will be rainy day, we don't have to water the plants.
+              Because they don't account for the weather.
+              If tomorrow is going to be a rainy day, we don't have to water the plants.
 
           </p>
         </Box>
@@ -242,8 +242,8 @@ export default props => {
         <Box px={2} width={[1, 1 / 2]}>
           <p>
             M.A.D algorithm is Management Allowable Depletion.
-            Using this, we can specify how dry soil can be without stress.
-            M.A.D depends on A.W.C (Avaliable Water Capacity) and has a specific value for each crop status like seeds or flowering.
+            Using this, we can specify how dry soil can be without water stress.
+            M.A.D depends on A.W.C (Avaliable Water Capacity) and has a specific value for each crop status, like seeds or flowering.
             <br></br><a href="">Details on M.A.D</a>
           </p>
         </Box>
@@ -254,7 +254,7 @@ export default props => {
         <Box px={2} width={[1, 1 / 2]}>
           <p>
             LoRa is Long Range and low-power, wide-area network(LPWAN) technology.
-            It is slow than 4G or 5G network, but it can communicate more longer than them using lower power.
+            It is slower than a 4G or 5G network, but it can communicate at a longer range than them using lower power.
           </p>
         </Box>
       </Section>
