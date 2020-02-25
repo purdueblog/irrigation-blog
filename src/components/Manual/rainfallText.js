@@ -31,7 +31,7 @@ const RainfallText = ({suppliedWater, setSuppliedWater}) => {
                 <h5>Today rainfall : <b>{rainfall} mm</b></h5>
             </div>
             <div>
-                <h5>Water supplied to the farm by rain : <b>{suppliedWater} mm</b></h5>
+                <h5>Water supplied to the farm by rain : <b>{suppliedWater} ml</b></h5>
             </div>
         </div>
     )
