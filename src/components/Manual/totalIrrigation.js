@@ -10,7 +10,7 @@ const totalIrrigation = ({todayWater, monthWater}) => {
                     <Card.Body>
                         <Card.Title>Today</Card.Title>
                         <Card.Text>
-                            You used <b>{todayWater} mm</b> of water today. 
+                            You used <b>{todayWater} ml</b> of water today. 
                         </Card.Text>
                     </Card.Body>
                 </Card>
