@@ -10,7 +10,7 @@ const RainfallText = ({suppliedWater, setSuppliedWater}) => {
             .then((response) => {
                 const newRainfall = response.data.rainfall;
                 // imch to mm
-                setRainfall(newRainfall * 25.4);
+                setRainfall(parseInt(newRainfall * 25.4*100)/100);
                 const newSuppliedWater = 812 * 2.54 * newRainfall; 
                 setSuppliedWater(parseInt(newSuppliedWater*100)/100);
                 console.log('rainfall fetch success!!', newRainfall);

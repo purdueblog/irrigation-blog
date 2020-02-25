@@ -73,7 +73,7 @@ const soilGraph = () => {
                             options={{
                                 title:{
                                     display:true,
-                                    text:'Total irrigation per day',
+                                    text:'Today Soil Condition',
                                     fontSize:20
                                 },
                                 legend:{
