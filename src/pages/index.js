@@ -230,7 +230,7 @@ export default props => {
               <br></br><br></br>
               Water usage rate<br></br>
                Most automatic irrigation system use more water than is necessary.
-              Because they can't predict weather.
+              Because they don't account for the weather.
               If tomorrow is going to be a rainy day, we don't have to water the plants.
 
           </p>
