@@ -48,11 +48,11 @@ class HeroText extends React.Component {
     return (
       <StyledTypist cursor={{ show: false }} {...this.props}>
         <strong>We Grow</strong> corn
-        <Typist.Backspace count={6} delay={300} />
+        <Typist.Backspace count={5} delay={300} />
         <span> green onions</span>
         <Typist.Backspace count={13} delay={300} />
         <span> wheat</span>
-        <Typist.Backspace count={7} delay={300} />
+        <Typist.Backspace count={6} delay={300} />
         <span> beans</span>
         <Typist.Delay ms={100} />
         <span>.</span>
